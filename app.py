@@ -8,14 +8,14 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import hashlib
 
-# --- GÜNCELLENMİŞ GİZLEME KODU ---
+# --- GİZLEME KODU ---
 hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            /* header {visibility: hidden;}  <-- Bu satırı devre dışı bıraktık, menü ikonu geri gelecek */
-            </style>
-            """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+/* header {visibility: hidden;} */
+</style>
+"""
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # ---------------------------
 
