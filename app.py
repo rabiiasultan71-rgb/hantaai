@@ -5,6 +5,20 @@ import pandas as pd
 import numpy as np
 import os
 from sklearn.ensemble import RandomForestClassifier
+import streamlit as st
+import hashlib
+# --- GİZLEME KODU BURAYA ---
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# ---------------------------
+
+# ... kodunun geri kalanı ...
 
 # --- ARKA PLAN FONKSİYONU ---
 def set_background(image_file):
