@@ -8,8 +8,6 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import hashlib
 
-st.set_page_config(initial_sidebar_state="expanded")
-
 # --- GİZLEME KODU BURAYA ---
 hide_streamlit_style = """
             <style>
