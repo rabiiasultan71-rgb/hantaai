@@ -8,16 +8,16 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import hashlib
 
-# --- GİZLEME KODU ---
+# --- GÜNCELLENMİŞ GİZLEME KODU ---
 hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-/* header {visibility: hidden;} */
-</style>
-"""
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # ---------------------------
+
 
 # --- ARKA PLAN FONKSİYONU ---
 def set_background(image_file):
