@@ -15,10 +15,8 @@ def set_background(image_file):
         css = f"""
         <style>
         .stApp {{
-        background-image: url("data:image/jpeg;base64,{encoded_string}");
-        background-color: rgba(255, 255, 255, 0.7);  /* Bunu ekle */
-        background-blend-mode: lighten;             /* Bunu ekle */
-        background-size: cover;
+            background-image: url("data:image/jpeg;base64,{encoded_string}");
+            background-size: cover;
         }}
         </style>
         """
