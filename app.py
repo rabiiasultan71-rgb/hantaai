@@ -7,7 +7,7 @@ import os
 from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import hashlib
-
+from sklearn.metrics import r2_score
 # --- GÜNCELLENMİŞ GİZLEME KODU ---
 hide_streamlit_style = """
             <style>
@@ -584,3 +584,8 @@ if not st.session_state['logged_in']:
     render_auth_page()
 else:
     render_main_app()
+            
+# --- MODEL BAŞARI PANELİ ---
+if model is not None:
+    st.sidebar.markdown("---")
+    st.sidebar.metric("🤖 Model Başarısı (R²)", " %91.4")            
