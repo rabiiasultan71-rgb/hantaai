@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 import hashlib
 from sklearn.metrics import r2_score
-# --- GÜNCELLENMİŞ GİZLEME KODU ---
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -156,7 +156,7 @@ def render_auth_page():
     st.title("🦠 Hantavirüs Erken Teşhis Destek ve Analiz Portalı")
     st.info("📢 **Bilgilendirme:** Risk değerlendirme ve semptom analiz modüllerine erişmek için lütfen giriş yapınız. Kaydınız yoksa 'Kayıt Ol' sekmesinden yeni bir kullanıcı hesabı oluşturarak sisteme erişebilirsiniz.")
     
-    # Gerisi zaten kodunda olduğu gibi kalacak
+   
     auth_mode = st.radio("İşlem Seçiniz", ["Giriş Yap", "Kayıt Ol"], horizontal=True)
 
     
@@ -513,7 +513,7 @@ def render_genomic_analysis():
         else:
             st.info("Analiz sonuçlarını, moleküler risk grafiklerini ve varyant raporunu görüntülemek için sol taraftaki butona basınız.")
 
-# --- 8.5. BİLGİLENDİRME VE KORUNMA MODÜLÜ ---
+
 def render_info_page():
     st.write("## 🛡️ Hantavirüs Rehberi: Bilgilendirme & Korunma Yolları")
     st.write("Hantavirüsler, kemirgenlerin salgıları (idrar, dışkı, tükürük) yoluyla insanlara bulaşan ve ciddi sağlık sorunlarına yol açabilen viral etkenlerdir.")
@@ -577,7 +577,7 @@ def render_main_app():
     elif "🛡️ Bilgilendirme" in choice: render_info_page()
     elif "📂 Veri Geçmişi" in choice: render_history_page()
 
-# Giriş yapılmış mı kontrol et ve arka planı ona göre yükle
+
 set_background("arkaplan (3).jpg") 
 
 if not st.session_state['logged_in']:
